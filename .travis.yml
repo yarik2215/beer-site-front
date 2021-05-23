@@ -26,3 +26,5 @@ jobs:
         # upload-dir: client
         local_dir: dist
       if: branch = master
+      env:
+        - VUE_APP_API_URL=https://dashboard.heroku.com/apps/beer-rating-533-backend/api
