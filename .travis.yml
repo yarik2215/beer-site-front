@@ -23,6 +23,6 @@ jobs:
         secret_access_key: ${AWS_SECRET_KEY}
         bucket: "beer-site-533-bucket"
         skip_cleanup: true
-        upload-dir: client
+        # upload-dir: client
         local_dir: dist
       if: branch = master
