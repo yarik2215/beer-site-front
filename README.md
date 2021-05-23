@@ -1,4 +1,8 @@
-# client
+# Beer site client
+
+[![Build Status](https://travis-ci.com/yarik2215/beer-site-backend.svg?branch=master)](https://travis-ci.com/yarik2215/beer-site-backend)
+
+Its a frontend part of beer raiting site
 
 ## Project setup
 ```
