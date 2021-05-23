@@ -1,0 +1,26 @@
+language: python
+
+stages:
+  - test
+  - deploy
+
+jobs:
+  include:
+    - stage: test
+      name: "Test"
+      install: npm install
+      script: echo "Test"
+
+    - stage: deploy
+      name: "Deploy"
+      install: npm install
+      script: npm run build
+      deploy:
+        provider: s3
+        access_key_id: ${AWS_KEY}
+        secret_access_key: ${AWS_SECRET_KEY}
+        bucket: "beer-site-533-bucket"
+        skip_cleanup: true
+        upload-dir: client
+        local_dir: dist
+      if: branch = master
