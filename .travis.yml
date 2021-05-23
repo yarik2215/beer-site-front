@@ -9,7 +9,7 @@ jobs:
     - stage: test
       name: "Test"
       install: npm install
-      script: echo "Test"
+      script: npm run test:unit
 
     - stage: deploy
       name: "Deploy"
