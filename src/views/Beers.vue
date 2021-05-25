@@ -61,7 +61,7 @@ export default {
         this.count = 0;
         this.maxCount = 0;
       }
-      const path = `${process.env.VUE_APP_API_URL}/beers`;
+      const path = `${process.env.VUE_APP_API_URL}/beers/`;
       const params = {
         offset: this.count,
         order: this.order,

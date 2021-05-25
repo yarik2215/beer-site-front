@@ -27,4 +27,4 @@ jobs:
         local_dir: dist
       if: branch = master
       env:
-        - VUE_APP_API_URL=https://beer-rating-533-backend.herokuapp.com/api
+        - VUE_APP_API_URL=http://ec2-35-158-232-255.eu-central-1.compute.amazonaws.com/api
